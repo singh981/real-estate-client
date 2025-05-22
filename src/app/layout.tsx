@@ -1,3 +1,14 @@
+/**
+ * Root Layout Component
+ * 
+ * The top-level layout that wraps all pages in the application
+ * Sets up:
+ * - Global CSS
+ * - Font loading (Geist Sans and Mono)
+ * - Metadata
+ * - Providers (Redux, theme, etc.)
+ */
+
 import './globals.css';
 
 import { Geist, Geist_Mono } from 'next/font/google';
@@ -5,11 +16,13 @@ import { Geist, Geist_Mono } from 'next/font/google';
 import type { Metadata } from 'next';
 import Providers from './providers';
 
+// Load Geist Sans font
 const geistSans = Geist({
 	variable: '--font-geist-sans',
 	subsets: ['latin'],
 });
 
+// Load Geist Mono font
 const geistMono = Geist_Mono({
 	variable: '--font-geist-mono',
 	subsets: ['latin'],

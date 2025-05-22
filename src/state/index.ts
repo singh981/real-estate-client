@@ -1,4 +1,10 @@
-import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { PayloadAction, createSlice } from "@reduxjs/toolkit";
+
+/**
+ * Redux state management
+ * Defines the global application state and reducers
+ * Manages property filters, view modes, and UI state
+ */
 
 export interface FiltersState {
   location: string;

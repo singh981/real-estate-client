@@ -1,12 +1,13 @@
 "use client";
 
-import { useRef } from "react";
 import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
+
 import { Provider } from "react-redux";
-import { setupListeners } from "@reduxjs/toolkit/query";
-import globalReducer from "@/state";
 import { api } from "@/state/api";
+import globalReducer from "@/state";
+import { setupListeners } from "@reduxjs/toolkit/query";
+import { useRef } from "react";
 
 /* REDUX STORE */
 const rootReducer = combineReducers({

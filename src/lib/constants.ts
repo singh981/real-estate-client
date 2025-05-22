@@ -1,28 +1,34 @@
 import {
-  Wifi,
-  Waves,
-  Dumbbell,
-  Car,
-  PawPrint,
-  Tv,
-  Thermometer,
-  Cigarette,
-  Cable,
-  Maximize,
   Bath,
+  Building,
+  Bus,
+  Cable,
+  Car,
+  Castle,
+  Cigarette,
+  Dumbbell,
+  Hammer,
+  Home,
+  LucideIcon,
+  Maximize,
+  Mountain,
+  PawPrint,
   Phone,
   Sprout,
-  Hammer,
-  Bus,
-  Mountain,
-  VolumeX,
-  Home,
-  Warehouse,
-  Building,
-  Castle,
+  Thermometer,
   Trees,
-  LucideIcon,
+  Tv,
+  VolumeX,
+  Warehouse,
+  Waves,
+  Wifi,
 } from "lucide-react";
+
+/**
+ * Application constants
+ * Defines enums, maps, and fixed values used throughout the application
+ * Provides consistent values for property attributes and UI elements
+ */
 
 export enum AmenityEnum {
   WasherDryer = "WasherDryer",

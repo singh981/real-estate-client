@@ -1,5 +1,9 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
+# Git ignore configuration
+# Specifies files and directories to exclude from version control
+# Includes dependencies, build artifacts, and environment files
+
 # dependencies
 /node_modules
 /.pnp

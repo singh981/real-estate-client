@@ -1,6 +1,13 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { clsx, type ClassValue } from "clsx";
 import { twMerge } from "tailwind-merge";
 import { toast } from "sonner";
+
+/**
+ * Utility functions
+ * Provides helper functions for common tasks
+ * Includes API request helpers, data transformation, and user management
+ */
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -20,7 +27,7 @@ export function formatPriceValue(value: number | null, isMin: boolean) {
   return isMin ? `$${value}+` : `<$${value}`;
 }
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
+ 
 export function cleanParams(params: Record<string, any>): Record<string, any> {
   return Object.fromEntries(
     Object.entries(params).filter(

@@ -130,6 +130,12 @@ declare global {
     userType: "manager" | "tenant";
   }
 
+  /**
+   * Global TypeScript declarations
+   * Defines interfaces, types, and enums used throughout the application
+   * Extends third-party types and declares custom types
+   */
+
   interface User {
     cognitoInfo: AuthUser;
     userInfo: Tenant | Manager;

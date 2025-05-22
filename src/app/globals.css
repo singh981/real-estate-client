@@ -1,3 +1,17 @@
+/**
+ * Global CSS Styles
+ * 
+ * Contains:
+ * - Tailwind CSS directives
+ * - CSS reset and base styles
+ * - CSS variables for theming (light and dark mode)
+ * - Custom component styles
+ * - Mapbox overrides
+ * - Scrollbar styling
+ * - AWS Amplify UI overrides
+ * - Toast notification styling
+ */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -82,10 +96,12 @@ body,
 	}
 }
 
+/* Dashboard container styles */
 .dashboard-container {
 	@apply pt-8 pb-5 px-8;
 }
 
+/* Mapbox custom styling */
 .mapboxgl-popup-content {
 	@apply !bg-primary-700;
 	@apply !rounded-lg;
@@ -109,6 +125,7 @@ body,
 	@apply !border-l-primary-700;
 }
 
+/* Map marker popup styles */
 .marker-popup {
 	@apply bg-primary-700;
 	@apply text-white;
@@ -137,7 +154,7 @@ body,
 	@apply text-xs text-primary-500 font-normal;
 }
 
-/* scrollbar styling */
+/* Custom scrollbar styling */
 ::-webkit-scrollbar {
 	width: 5px;
 }
@@ -164,7 +181,7 @@ body,
 	}
 }
 
-/* Amplify UI Overrides */
+/* AWS Amplify UI component overrides */
 [data-amplify-authenticator] {
 	--amplify-components-button-primary-background-color: var(--primary);
 	--amplify-components-button-primary-hover-background-color: hsl(
@@ -243,7 +260,7 @@ body,
 	color: #ff0000;
 }
 
-/* Sonner Toast Styles */
+/* Sonner Toast notification styles */
 [data-close-button='true'] {
 	@apply bg-background border-border text-foreground hover:bg-muted;
 }

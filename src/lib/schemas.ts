@@ -1,4 +1,11 @@
+/**
+ * Zod validation schemas
+ * Defines validation rules for forms and data structures
+ * Ensures data integrity and provides error messages
+ */
+
 import * as z from "zod";
+
 import { PropertyTypeEnum } from "@/lib/constants";
 
 export const propertySchema = z.object({
